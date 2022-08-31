@@ -20,7 +20,7 @@ export default function Modal({ title, content, onClick }: ModalProps) {
             <h3 className='text-2xl font-semibold text-gray-900 dark:text-white'>{title}</h3>
             <button
               type='button'
-              className='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
+              className='text-gray-900 bg-transparent hover:bg-gray-900 hover:text-white rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
               data-modal-toggle='modal'
               onClick={onClick}
             >
@@ -44,7 +44,12 @@ export default function Modal({ title, content, onClick }: ModalProps) {
             <p className='text-2xl text-center leading-relaxed text-gray-700 dark:text-gray-400'>{content}</p>
           </div>
           <div className='flex items-center justify-center p-6 space-x-2 rounded-b'>
-            <button onClick={onClick} data-modal-toggle='modal' type='button'>
+            <button
+              onClick={onClick}
+              data-modal-toggle='modal'
+              title='Close'
+              className='text-sm bg-gray-900 text-white font-semibold py-2 px-4 border border-gray-900 rounded-md duration-200 ease-out hover:scale-105'
+            >
               Close
             </button>
           </div>
