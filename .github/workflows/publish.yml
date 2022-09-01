@@ -29,10 +29,10 @@ jobs:
         run: npm && npm install
 
       - name: Build
-        run: npm build
+        run: npm run build
 
       - name: Publish
-        run: npm publish
+        run: npm run publish
 
         env:
           # We need this to our NPM account
