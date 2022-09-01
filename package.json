@@ -1,6 +1,6 @@
 {
   "name": "react-tailwind-modal",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -17,7 +17,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "yarn --ignore-engines build:esm && yarn --ignore-engines build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepare": "npm run build",
