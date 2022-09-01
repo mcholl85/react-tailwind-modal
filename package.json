@@ -17,7 +17,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "yarn --ignore-engines build:esm && yarn --ignore-engines build:cjs",
+    "build": "npm build:esm && npm build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepare": "npm run build",
@@ -45,6 +45,7 @@
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-tailwind-modal": "^0.8.0",
     "ts-jest": "^28.0.8",
     "typescript": "^4.8.2"
   }
