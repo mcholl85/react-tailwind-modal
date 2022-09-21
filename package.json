@@ -1,7 +1,7 @@
 {
   "name": "react-tailwind-modal",
-  "version": "1.4.0",
-  "description": "",
+  "version": "1.5.0",
+  "description": "A simple modal with React and Tailwind",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -26,7 +26,7 @@
     "test": "jest --config jestconfig.json",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
-  "keywords": [],
+  "keywords": ["React","Tailwind", "Modal"],
   "author": "Matthieu Chollet",
   "license": "ISC",
   "devDependencies": {
